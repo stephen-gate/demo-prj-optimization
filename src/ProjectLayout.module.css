@@ -1,0 +1,23 @@
+.container {
+  margin: 0px 20px;
+}
+
+.container_v2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.container_prj {
+  margin: 0 10px;
+  width: 48%;
+}
+
+.container_prj_backplate {
+  background-color: rgb(187, 187, 187, 0.7);
+  border-radius: 4px;
+  padding: 2px;
+}
+
+
+

@@ -1,0 +1,101 @@
+.task_add_section {
+  margin: 1rem auto;
+}
+
+.task_header {
+  max-width: 90%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.task_title {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.task_counter {
+  width: 4rem;
+  color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: bold;
+}
+
+.task_add_control {
+  margin: 1rem auto;
+  max-width: 90%;
+}
+
+.task_add_control label,
+.task_add_control input {
+  display: block;
+  width: 100%;
+}
+
+.task_add_control input {
+  font: inherit;
+  padding: 0.1rem 0.25rem;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  margin-bottom: 1rem;
+}
+
+.task_add_control input:focus {
+  outline: none;
+  border-bottom-color: rgb(128, 180, 216);
+}
+
+.button_layout {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.button_layout_left {
+  width: 30%;
+}
+
+.button_layout_center {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button_layout_right {
+  width: 30%;
+  display:flex;
+  justify-content: center;
+}
+
+.add_button {
+  font-family: sans-serif;
+  font-weight: normal;
+  font-size: 0.9rem;
+  height: 2.5rem;
+  background-color: white;
+  cursor: pointer;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(53, 32, 242);
+  border: 1px solid rgb(53, 32, 242);
+  border-radius: 5px;
+  padding: 0.5rem 2rem;
+}
+
+.add_button:hover,
+.add_button:active {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.26);
+}
+
+.add_button:focus {
+  outline: none;
+}
+
+

@@ -1,0 +1,39 @@
+.task_header_section {
+  margin: 1rem auto;
+}
+
+.task_header_button_div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toggle_button {
+  font-family: sans-serif;
+  font-weight: normal;
+  font-size: 0.9rem;
+  height: 2.5rem;
+  background-color: white;
+  cursor: pointer;
+  /* white-space: nowrap; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #238e2a;
+  border: 1px solid #238e2a;
+  border-radius: 5px;
+  padding: 0.5rem 2rem;
+}
+
+
+
+
+
+.toggle_button:hover,
+.toggle_button:active {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.26);
+}
+
+.toggle_button:focus {
+  outline: none;
+}

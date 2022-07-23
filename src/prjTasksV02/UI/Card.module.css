@@ -1,0 +1,30 @@
+.card {
+  padding: 1rem;
+  background-color: rgb(218, 246, 255);
+  box-shadow: 2px 2px 8px rgba(59, 69, 255, 0.75);
+  border: 0.25rem solid rgb(128, 180, 216);
+  border-radius: 5px;
+  margin: 1rem auto;
+  width: 95%;
+    }
+
+    /* 
+    OLD BLUE
+    background-color: rgb(218, 246, 255);
+      box-shadow: 2px 2px 8px rgba(59, 69, 255, 0.75);
+      border: 0.25rem solid rgb(128, 180, 216);
+    */
+
+    /* 
+    LIGHT GREEN
+background-color: rgb(166, 255, 184, 0.5);
+DARK GREEN
+border: 1px solid #238e2a;
+background-color: #238e2a;
+    
+    */
+
+
+
+
+    

@@ -1,0 +1,107 @@
+.task_list_section {
+  margin: 1rem auto;
+}
+
+
+.task_header {
+  max-width: 90%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.task_title {
+  /* width: 20rem; */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.task_counter {
+  width: 4rem;
+  color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: bold;
+}
+
+.task_list_bar {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  padding: 5px;
+  margin: 5px 0;
+}
+
+.task_list_bar:hover {
+  background-color: rgb(218, 246, 255);
+}
+
+.task_priority {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 10%;
+}
+
+.task_taskname {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 80%;
+}
+
+
+
+
+
+.detail_bar_element {
+  border: 1px solid #238e2a;
+  border-radius: 14px;
+  width: 90%;
+  height: 40px;
+  margin: 10px;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.detail_bar_timestamp {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 15%;
+      height: 90%;
+}
+
+.detail_bar_name {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 25%;
+  height: 90%;
+  padding-left: 5px;
+}
+
+.detail_bar_phone {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  width: 25%;
+  height: 90%;
+  padding-right: 5px;
+}
+
+.detail_bar_buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  height: 100%;
+  padding-right: 15px;
+  gap: 15px;
+}
