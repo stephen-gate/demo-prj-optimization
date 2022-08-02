@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Card from "../UI/Card";
 import LoadingSpinner from "../UI/LoadingSpinner";
-
 import classes from "./TasksAdd.module.css";
 
 let reevalCounter = 0;

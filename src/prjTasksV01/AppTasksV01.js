@@ -1,26 +1,20 @@
-import { useState, useEffect, useCallback, useMemo } from "react";
+import { useState, useCallback } from "react";
 import TasksAdd from "./components/TasksAdd";
 import TasksList from "./components/TasksList";
 import TasksSearch from "./components/TasksSearch";
 import TasksHeader from "./components/TasksHeader";
 
-//import "./AppTasksV01.css";
-
-
 const AppTasksV01 = () => {
   const [taskArray, setTaskArray] = useState([]);
   const [loadingSpinner, setLoadingSpinner] = useState(false);
-
-
   const [searchLoader, setSearchLoader] = useState(true);
   
-
   const toggleSearchLoader = () => {
     setSearchLoader( (prevSearchLoader) => {return !prevSearchLoader } );
     console.log('searchLoader: ', searchLoader );
   };
 
-  const addHandler = useCallback((taskObj) => {
+  const addHandler = (taskObj) => {
 
     setLoadingSpinner(true);
     fetch("https://sgg-tasks-default-rtdb.firebaseio.com/sgg-tasks.json", {
@@ -44,9 +38,9 @@ const AppTasksV01 = () => {
         });
         setLoadingSpinner(false);
       });
-  }, []);
+  };
 
-  const deleteHandler = useCallback((deleteId) => {
+  const deleteHandler = (deleteId) => {
     setLoadingSpinner(true);
     fetch(
       `https://sgg-tasks-default-rtdb.firebaseio.com/sgg-tasks/${deleteId}.json`,
@@ -63,22 +57,19 @@ const AppTasksV01 = () => {
       .catch((error) => {
         console.log("ERROR!ON DELETE!: ", error.message);
       });
-  }, []);
+  };
 
   const searchLoader01 = (loadedResults) => {
-    //console.log("searchLoader01");
     setTaskArray(loadedResults);
   };
 
   const searchLoader02 = useCallback((loadedResults) => {
-    //console.log("searchLoader02");
     setTaskArray(loadedResults);
   }, []);
 
 
   return (
     <div>
-
       <TasksHeader 
       searchLoader={searchLoader}
       onToggleSearchLoader={toggleSearchLoader}

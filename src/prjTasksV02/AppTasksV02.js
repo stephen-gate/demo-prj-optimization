@@ -1,9 +1,7 @@
-import { useState, useEffect, useCallback, useMemo } from "react";
+import { useState, useCallback, useMemo } from "react";
 import TasksAdd from "./components/TasksAdd";
 import TasksList from "./components/TasksList";
 import TasksSearch from "./components/TasksSearch";
-//import "./AppTasksV02.css";
-
 
 const AppTasksV02 = () => {
   const [taskArray, setTaskArray] = useState([]);
